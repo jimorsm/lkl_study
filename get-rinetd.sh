@@ -42,6 +42,7 @@ echo "4. Generate /etc/systemd/system/rinetd-bbr.service"
 cat <<EOF > /etc/systemd/system/rinetd-bbr.service
 [Unit]
 Description=rinetd with bbr
+After=network.target
 Documentation=https://github.com/linhua55/lkl_study
 
 [Service]
